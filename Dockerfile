@@ -28,7 +28,7 @@ RUN ln -sf $(which python3.11) /usr/local/bin/python && \
 # Install system dependencies
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y wget git libcudnn8 libcudnn8-dev lshw curl && \
+    apt-get install -y wget git libcudnn8 libcudnn8-dev lshw curl zstd && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
